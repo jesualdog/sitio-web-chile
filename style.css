@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: Roboto, Helvetica, NanumGothic, sans-serif;
 }
 
 .header {
-  width: 90%;
+  width: 100%;
   background: #ffffff;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -142,7 +144,7 @@ body {
 }
 
 /* ========================= MOBILE ========================= */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   /* ---------- HEADER ---------- */
   .header {
@@ -220,16 +222,24 @@ body {
   }
 
   /* ---------- BANNER ---------- */
+
+  .banner{
+      width: 100%;
+  margin: 0;
+  padding: 0;
+
+  }
+
   .img-banner {
     content: url("imagenes/Sail_Banner_Mobile.jpg");
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+  display: block;
   }
 
   .botones-banner {
     padding: 16px;
     justify-content: center;
-    gap: 12px;
   }
 
   .btn-banner {
